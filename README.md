@@ -23,6 +23,7 @@ This project involves analyzing Covid-19 data using SQL. The data includes infor
 ## Data Exploration
 
 ### Total Cases vs Total Deaths in Africa
+
 The following SQL query shows the total number of cases and deaths in Africa, along with the likelihood of dying if contracting Covid-19.
 -- SQL Query
 SELECT location, date, total_cases, total_deaths, (CAST(total_deaths AS FLOAT) / CAST(total_cases AS FLOAT)) * 100 AS death_rate
@@ -31,7 +32,9 @@ WHERE location LIKE '%Africa%'
 AND continent IS NOT NULL
 ORDER BY 1, 2;
 
+
 **### Total Cases vs Population**
+
 This query calculates the percentage of the population that contracted Covid-19 in each location.
 -- SQL Query
 SELECT location, date, population, total_cases, (CAST(total_cases AS FLOAT) / CAST(population AS FLOAT)) * 100 AS InfectionRate
@@ -39,7 +42,9 @@ FROM PortfolioProject..CovidDeaths
 WHERE continent IS NOT NULL
 ORDER BY 1, 2;
 
+
 **Countries with Highest Infection Rates**
+
 This query shows the countries with the highest infection rates compared to their population.
 -- SQL Query
 SELECT location, population, MAX(total_cases) AS HighestInfectionCount, MAX((CAST(total_cases AS FLOAT) / CAST(population AS FLOAT))) * 100 AS HighestInfectionRate
@@ -48,7 +53,9 @@ WHERE continent IS NOT NULL
 GROUP BY location, population
 ORDER BY HighestInfectionRate DESC;
 
+
 **Countries with Highest Death Counts**
+
 This query displays the countries with the highest death counts.
 -- SQL Query
 SELECT location, MAX(Total_deaths) AS HighestDeathCounts
@@ -57,7 +64,9 @@ WHERE continent IS NOT NULL
 GROUP BY location
 ORDER BY HighestDeathCounts DESC;
 
+
 **Highest Death Counts by Continent**
+
 This query shows the highest death counts by continent.
 -- SQL Query
 SELECT continent, MAX(Total_deaths) AS HighestDeathCounts
@@ -66,13 +75,17 @@ WHERE continent IS NOT NULL
 GROUP BY continent
 ORDER BY HighestDeathCounts DESC;
 
+
 **Global Covid-19 Statistics**
+
 This query shows global Covid-19 statistics, including total cases, total deaths, and death percentage.
 -- SQL Query
 SELECT SUM(new_cases) AS total_cases, SUM(new_deaths) AS total_deaths, SUM(new_deaths) / SUM(new_cases) * 100 AS DeathPercentage
 FROM PortfolioProject..CovidDeaths;
 
+
 **Population vs Vaccination**
+
 This query compares the population with the number of vaccinations to see the percentage of people vaccinated.
 -- SQL Query
 SELECT dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
