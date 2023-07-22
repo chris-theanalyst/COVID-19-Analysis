@@ -25,7 +25,9 @@ This project involves analyzing Covid-19 data using SQL. The data includes infor
 ### Total Cases vs Total Deaths in Africa
 
 The following SQL query shows the total number of cases and deaths in Africa, along with the likelihood of dying if contracting Covid-19.
+
 -- SQL Query
+
 SELECT location, date, total_cases, total_deaths, (CAST(total_deaths AS FLOAT) / CAST(total_cases AS FLOAT)) * 100 AS death_rate
 FROM PortfolioProject..CovidDeaths
 WHERE location LIKE '%Africa%'
