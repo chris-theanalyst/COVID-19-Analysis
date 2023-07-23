@@ -55,7 +55,13 @@ WHERE location LIKE '%Africa%'
 AND continent IS NOT NULL
 ORDER BY 1, 2;
 
-![Total Cases vs Total Deaths in Africa](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/82ed383cf4bf6187bf54b28f1d796f027c25ac1a/code%203.png)
+As the number of cases increases, there is a higher chance of death occuring
+
+![Total Cases vs Total Deaths in Africa](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/82ed383cf4bf6187bf54b28f1d796f027c25ac1a/code%204a.png)
+
+![Increase in cases equals increase in death](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/82ed383cf4bf6187bf54b28f1d796f027c25ac1a/code%204a.png)
+
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/82ed383cf4bf6187bf54b28f1d796f027c25ac1a/code%204c.png)
 
 **### Total Cases vs Population**
 
