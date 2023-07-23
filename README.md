@@ -28,7 +28,7 @@ FROM PortfolioProject..CovidDeaths
 WHERE continent IS NOT NULL
 ORDER BY 3,4
 
-![CovidDeath Data View](code 1.png)
+![CovidDeath Data View](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/82ed383cf4bf6187bf54b28f1d796f027c25ac1a/code%201.png)
 
 
 ## Data Exploration
