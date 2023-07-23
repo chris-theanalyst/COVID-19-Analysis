@@ -22,6 +22,9 @@ This repository contains SQL scripts for exploring Covid-19 data. The scripts de
 This project involves analyzing Covid-19 data using SQL. The data includes information on total cases, total deaths, vaccination rates, and population in various locations around the world.
 
 ## View Data
+This project comprises two datasets. First is the CovidDeaths data and then the CovidVaccination data
+
+### CovidDeath Data
 
 SELECT *
 FROM PortfolioProject..CovidDeaths
@@ -30,6 +33,13 @@ ORDER BY 3,4
 
 ![CovidDeath Data View](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/82ed383cf4bf6187bf54b28f1d796f027c25ac1a/code%201.png)
 
+### CovidVaccination Data
+
+SELECT *
+FROM PortfolioProject..CovidVaccinations
+ORDER BY 3,4
+
+![CovidVaccination Data View](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/82ed383cf4bf6187bf54b28f1d796f027c25ac1a/code%202.png)
 
 ## Data Exploration
 
@@ -45,7 +55,7 @@ WHERE location LIKE '%Africa%'
 AND continent IS NOT NULL
 ORDER BY 1, 2;
 
-![
+![Total Cases vs Total Deaths in Africa](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/82ed383cf4bf6187bf54b28f1d796f027c25ac1a/code%203.png)
 
 **### Total Cases vs Population**
 
