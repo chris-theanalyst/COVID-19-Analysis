@@ -74,6 +74,11 @@ FROM PortfolioProject..CovidDeaths
 WHERE continent IS NOT NULL
 ORDER BY 1, 2;
 
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/077455bb3141685d6ef53430fd2727d6c01d4b67/code%205b.png)
+
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/077455bb3141685d6ef53430fd2727d6c01d4b67/code%205a.png)
+
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/077455bb3141685d6ef53430fd2727d6c01d4b67/code%205cc.png)
 
 **Countries with Highest Infection Rates**
 
@@ -86,6 +91,8 @@ FROM PortfolioProject..CovidDeaths
 WHERE continent IS NOT NULL
 GROUP BY location, population
 ORDER BY HighestInfectionRate DESC;
+
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/077455bb3141685d6ef53430fd2727d6c01d4b67/code%206a.png)
 
 
 **Countries with Highest Death Counts**
@@ -100,6 +107,8 @@ WHERE continent IS NOT NULL
 GROUP BY location
 ORDER BY HighestDeathCounts DESC;
 
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/12217a0e34e3560b3ae0d52e8c30bb874012023c/code%207.png)
+
 
 **Highest Death Counts by Continent**
 
@@ -113,6 +122,8 @@ WHERE continent IS NOT NULL
 GROUP BY continent
 ORDER BY HighestDeathCounts DESC;
 
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/12217a0e34e3560b3ae0d52e8c30bb874012023c/code%208.png)
+
 
 **Global Covid-19 Statistics**
 
@@ -122,6 +133,8 @@ This query shows global Covid-19 statistics, including total cases, total deaths
 
 SELECT SUM(new_cases) AS total_cases, SUM(new_deaths) AS total_deaths, SUM(new_deaths) / SUM(new_cases) * 100 AS DeathPercentage
 FROM PortfolioProject..CovidDeaths;
+
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/12217a0e34e3560b3ae0d52e8c30bb874012023c/code%2010.png)
 
 
 **Population vs Vaccination**
@@ -139,6 +152,7 @@ JOIN PortfolioProject..CovidVaccinations vac
 WHERE dea.continent IS NOT NULL
 ORDER BY 1, 2, 3;
 
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/b2db6e03fb171f7c93ecf0d47292c7e53a09f98f/code%2011.png)
 
 
 
