@@ -6,6 +6,7 @@ This repository contains SQL scripts for exploring Covid-19 data. The scripts de
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [View Data](#view-data)
 - [Data Exploration](#data-exploration)
   - [Total Cases vs Total Deaths in Africa](#total-cases-vs-total-deaths-in-africa)
   - [Total Cases vs Population](#total-cases-vs-population)
@@ -19,6 +20,16 @@ This repository contains SQL scripts for exploring Covid-19 data. The scripts de
 ## Introduction
 
 This project involves analyzing Covid-19 data using SQL. The data includes information on total cases, total deaths, vaccination rates, and population in various locations around the world.
+
+## View Data
+
+SELECT *
+FROM PortfolioProject..CovidDeaths
+WHERE continent IS NOT NULL
+ORDER BY 3,4
+
+![CovidDeath Data View](code 1.png)
+
 
 ## Data Exploration
 
@@ -34,6 +45,7 @@ WHERE location LIKE '%Africa%'
 AND continent IS NOT NULL
 ORDER BY 1, 2;
 
+![
 
 **### Total Cases vs Population**
 
