@@ -47,7 +47,6 @@ Result
 
 The following SQL query shows the total number of cases and deaths in Africa, along with the likelihood of dying if contracting Covid-19.
 
--- SQL Query
 
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(2).png)
 
@@ -63,7 +62,6 @@ As the number of cases increases, there is a higher chance of death occuring
 
 This query calculates the percentage of the population that contracted Covid-19 in each location.
 
--- SQL Query
 
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(3).png)
 
@@ -80,7 +78,6 @@ Result
 
 This query shows the countries with the highest infection rates compared to their population.
 
--- SQL Query
 
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(4).png)
 
@@ -94,7 +91,6 @@ Result
 
 This query displays the countries with the highest death counts.
 
--- SQL Query
 
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(5).png)
 
@@ -108,7 +104,6 @@ Result
 
 This query shows the highest death counts by continent.
 
--- SQL Query
 
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(6).png)
 
@@ -122,7 +117,6 @@ Result
 
 This query shows global Covid-19 statistics, including total cases, total deaths, and death percentage.
 
--- SQL Query
 
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(7).png)
 
@@ -136,7 +130,6 @@ Result
 
 This query compares the population with the number of vaccinations to see the percentage of people vaccinated.
 
--- SQL Query
 
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(8).png)
 
