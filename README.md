@@ -33,9 +33,10 @@ Result
 
 ### CovidVaccination Data
 
-![]9https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(1).png)
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(1).png)
 
 Result
+
 ![CovidVaccination Data View](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/82ed383cf4bf6187bf54b28f1d796f027c25ac1a/code%202.png)
 
 ## Data Exploration
@@ -65,6 +66,7 @@ This query calculates the percentage of the population that contracted Covid-19 
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(3).png)
 
 Result
+
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/077455bb3141685d6ef53430fd2727d6c01d4b67/code%205b.png)
 
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/077455bb3141685d6ef53430fd2727d6c01d4b67/code%205a.png)
@@ -77,9 +79,10 @@ This query shows the countries with the highest infection rates compared to thei
 
 -- SQL Query
 
-1[](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(4).png)
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(4).png)
 
 Result
+
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/077455bb3141685d6ef53430fd2727d6c01d4b67/code%206a.png)
 
 
@@ -92,6 +95,7 @@ This query displays the countries with the highest death counts.
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(5).png)
 
 Result
+
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/12217a0e34e3560b3ae0d52e8c30bb874012023c/code%207.png)
 
 
@@ -104,6 +108,7 @@ This query shows the highest death counts by continent.
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(6).png)
 
 Result
+
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/12217a0e34e3560b3ae0d52e8c30bb874012023c/code%208.png)
 
 
@@ -116,6 +121,7 @@ This query shows global Covid-19 statistics, including total cases, total deaths
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(7).png)
 
 Result
+
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/12217a0e34e3560b3ae0d52e8c30bb874012023c/code%2010.png)
 
 
@@ -128,6 +134,7 @@ This query compares the population with the number of vaccinations to see the pe
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(8).png)
 
 Result
+
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/b2db6e03fb171f7c93ecf0d47292c7e53a09f98f/code%2011.png)
 
 
