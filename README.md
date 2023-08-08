@@ -26,19 +26,16 @@ This project comprises two datasets. First is the CovidDeaths data and then the 
 
 ### CovidDeath Data
 
-SELECT *
-FROM PortfolioProject..CovidDeaths
-WHERE continent IS NOT NULL
-ORDER BY 3,4
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon.png)
 
+Result
 ![CovidDeath Data View](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/82ed383cf4bf6187bf54b28f1d796f027c25ac1a/code%201.png)
 
 ### CovidVaccination Data
 
-SELECT *
-FROM PortfolioProject..CovidVaccinations
-ORDER BY 3,4
+![]9https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(1).png)
 
+Result
 ![CovidVaccination Data View](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/82ed383cf4bf6187bf54b28f1d796f027c25ac1a/code%202.png)
 
 ## Data Exploration
@@ -49,11 +46,7 @@ The following SQL query shows the total number of cases and deaths in Africa, al
 
 -- SQL Query
 
-SELECT location, date, total_cases, total_deaths, (CAST(total_deaths AS FLOAT) / CAST(total_cases AS FLOAT)) * 100 AS death_rate
-FROM PortfolioProject..CovidDeaths
-WHERE location LIKE '%Africa%'
-AND continent IS NOT NULL
-ORDER BY 1, 2;
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(2).png)
 
 As the number of cases increases, there is a higher chance of death occuring
 
@@ -69,11 +62,9 @@ This query calculates the percentage of the population that contracted Covid-19 
 
 -- SQL Query
 
-SELECT location, date, population, total_cases, (CAST(total_cases AS FLOAT) / CAST(population AS FLOAT)) * 100 AS InfectionRate
-FROM PortfolioProject..CovidDeaths
-WHERE continent IS NOT NULL
-ORDER BY 1, 2;
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(3).png)
 
+Result
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/077455bb3141685d6ef53430fd2727d6c01d4b67/code%205b.png)
 
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/077455bb3141685d6ef53430fd2727d6c01d4b67/code%205a.png)
@@ -86,12 +77,9 @@ This query shows the countries with the highest infection rates compared to thei
 
 -- SQL Query
 
-SELECT location, population, MAX(total_cases) AS HighestInfectionCount, MAX((CAST(total_cases AS FLOAT) / CAST(population AS FLOAT))) * 100 AS HighestInfectionRate
-FROM PortfolioProject..CovidDeaths
-WHERE continent IS NOT NULL
-GROUP BY location, population
-ORDER BY HighestInfectionRate DESC;
+1[](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(4).png)
 
+Result
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/077455bb3141685d6ef53430fd2727d6c01d4b67/code%206a.png)
 
 
@@ -101,12 +89,9 @@ This query displays the countries with the highest death counts.
 
 -- SQL Query
 
-SELECT location, MAX(Total_deaths) AS HighestDeathCounts
-FROM PortfolioProject..CovidDeaths
-WHERE continent IS NOT NULL
-GROUP BY location
-ORDER BY HighestDeathCounts DESC;
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(5).png)
 
+Result
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/12217a0e34e3560b3ae0d52e8c30bb874012023c/code%207.png)
 
 
@@ -116,12 +101,9 @@ This query shows the highest death counts by continent.
 
 -- SQL Query
 
-SELECT continent, MAX(Total_deaths) AS HighestDeathCounts
-FROM PortfolioProject..CovidDeaths
-WHERE continent IS NOT NULL
-GROUP BY continent
-ORDER BY HighestDeathCounts DESC;
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(6).png)
 
+Result
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/12217a0e34e3560b3ae0d52e8c30bb874012023c/code%208.png)
 
 
@@ -131,9 +113,9 @@ This query shows global Covid-19 statistics, including total cases, total deaths
 
 -- SQL Query
 
-SELECT SUM(new_cases) AS total_cases, SUM(new_deaths) AS total_deaths, SUM(new_deaths) / SUM(new_cases) * 100 AS DeathPercentage
-FROM PortfolioProject..CovidDeaths;
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(7).png)
 
+Result
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/12217a0e34e3560b3ae0d52e8c30bb874012023c/code%2010.png)
 
 
@@ -143,15 +125,9 @@ This query compares the population with the number of vaccinations to see the pe
 
 -- SQL Query
 
-SELECT dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
-	SUM(vac.new_vaccinations) OVER (PARTITION BY dea.location, dea.date) AS RollingPeopleVaccinated
-FROM PortfolioProject..CovidDeaths dea
-JOIN PortfolioProject..CovidVaccinations vac
-	ON dea.location = vac.location
-	AND dea.date = vac.date 
-WHERE dea.continent IS NOT NULL
-ORDER BY 1, 2, 3;
+![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/06b69a941eb9e2616a7001e9cb0d0d47bfb9ed6e/carbon%20(8).png)
 
+Result
 ![](https://github.com/chris-theanalyst/COVID-19-Analysis/blob/b2db6e03fb171f7c93ecf0d47292c7e53a09f98f/code%2011.png)
 
 
